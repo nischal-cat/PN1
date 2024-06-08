@@ -32,9 +32,6 @@ We believe in the power of collaboration. Let’s make learning more engaging an
 Thank you for your support!
 
 
-
-Certainly! Here is the detailed documentation including the function names and their purposes:
-
 **------------------------------------------------------------------------------------------------------------------------------------------**
 
 ### Javascript
