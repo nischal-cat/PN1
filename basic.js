@@ -241,21 +241,21 @@ document.addEventListener('DOMContentLoaded', function() {
     
     const topics = {
         semester1: [
-            { title: 'Mathematics', badge: 14, description: 'Introduction to Calculus', image: '/images/courses/maths1.jpg' },
-            { title: 'Physics', badge: 75, description: 'Schrodinger\'s equation xa tara cat xaina.', image: '/images/courses/physics-1.jpg' },
-            { title: 'C-Programming', badge: 100, description: 'Basic Concepts in programming', image: '/images/courses/cprogramming-1.jpg' },
-            { title: 'Digital Logic', badge: 50, description: 'Introduction to 0 and 1', image: '/images/courses/digitallogic-1.jpg' },
-            { title: 'Introduction to Information Technology', badge: 30, description: 'Title says all.', image: '/images/courses/iit-1.gif' }
+            { title: 'Mathematics', badge: 14, description: 'Introduction to Calculus', image: '/PN1/images/courses/maths1.jpg' },
+            { title: 'Physics', badge: 75, description: 'Schrodinger\'s equation xa tara cat xaina.', image: '/PN1/images/courses/physics-1.jpg' },
+            { title: 'C-Programming', badge: 100, description: 'Basic Concepts in programming', image: '/PN1/images/courses/cprogramming-1.jpg' },
+            { title: 'Digital Logic', badge: 50, description: 'Introduction to 0 and 1', image: '/PN1/images/courses/digitallogic-1.jpg' },
+            { title: 'Introduction to Information Technology', badge: 30, description: 'Title says all.', image: '/PN1/images/courses/iit-1.gif' }
         ],
         semester2: [
-            { title: 'Advanced Mathematics', badge: 20, description: 'Linear Algebra and Differential Equations', image: '/images/courses/advanced_math.jpg' },
-            { title: 'Thermodynamics', badge: 45, description: 'Principles of Thermodynamics', image: '/images/courses/thermodynamics.jpg' },
-            { title: 'Organic Chemistry', badge: 60, description: 'Introduction to Organic Chemistry', image: '/images/courses/organic_chemistry.jpg' },
-            { title: 'Data Structures', badge: 55, description: 'Fundamentals of Data Structures', image: '/images/courses/data_structures.jpg' },
-            { title: 'Communication Skills', badge: 40, description: 'Effective Communication Techniques', image: '/images/courses/communication_skills.jpg' }
+            { title: 'Advanced Mathematics', badge: 20, description: 'Linear Algebra and Differential Equations', image: '/PN1/images/courses/advanced_math.jpg' },
+            { title: 'Thermodynamics', badge: 45, description: 'Principles of Thermodynamics', image: '/PN1/images/courses/thermodynamics.jpg' },
+            { title: 'Organic Chemistry', badge: 60, description: 'Introduction to Organic Chemistry', image: '/PN1/images/courses/organic_chemistry.jpg' },
+            { title: 'Data Structures', badge: 55, description: 'Fundamentals of Data Structures', image: '/PN1/images/courses/data_structures.jpg' },
+            { title: 'Communication Skills', badge: 40, description: 'Effective Communication Techniques', image: '/PN1/images/courses/communication_skills.jpg' }
         ],
         semester3: [
-            { title: 'Discrete Mathematics', badge: 25, description: 'Theory of Computation and Graph Theory', image: '/images/courses/discrete_math.jpg' }
+            { title: 'Discrete Mathematics', badge: 25, description: 'Theory of Computation and Graph Theory', image: '/PN1/images/courses/discrete_math.jpg' }
         ]
     };
     
