@@ -1,39 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog-CSIT</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-
-           <div class="container">
-      <header class="header">
-        <div class="logo"><h1>LOGO</h1></div>
-        <nav class="nav">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Learn</a></li>
-            <li><a href="#">Editor</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="#">About</a></li>
-          </ul>
-        </nav>
-        <div class="themebtn">
-          <button onclick="fun()"><img src="theme.png" alt="theme" /></button>
-        </div>
-      </header>
-
-        
-        body {
-            font-family: sans-serif;
-            background-color: #ecebedba;
-            color: #333;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .blog-header {
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://kit.fontawesome.com/a0f96472cb.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSIT PROJECT</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <style>
+.blog-header {
     text-align: center;
     margin-top: 20px;
 }
@@ -87,18 +62,34 @@
     color: rgb(13, 106, 142);
     position: relative;
     z-index: 10;
-    font-size: 1.05rem; /* Slightly increase font-size, adjust as needed */
+    font-size: 1.05rem; 
 }
 
-       
-    </style>
-</head>
-<body>
-    <div class="blog-header">
+  </style>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="logo"><h1>LOGO</h1></div>
+        <nav class="nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Learn</a></li>
+            <li><a href="#">Editor</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </nav>
+        <div class="themebtn">
+          <button onclick="fun()"><img src="theme.png" alt="theme" /></button>
+        </div>
+      </header>
+
+      <!-- main -->
+      <div class="blog-header">
         <p>Study guys !!!</p>
         <h1>Read our blog</h1>
     </div>
-    <div class="blogs-container">
+      <div class="blogs-container">
         <div class="blog-card">
             <img src="/PN1/images/elon.jpg" alt="Blog Image 1">
             <div class="blog-card-content">
@@ -175,5 +166,5 @@
     </div>
 </div>
     <script src="basic.js"></script>
-</body>
+  </body>
 </html>
