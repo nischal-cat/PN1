@@ -228,24 +228,24 @@ opacity: 0.8;
   margin-bottom: 30px;
 }
 
+
 .enter .enterbtn {
   display: inline-block;
   background-color: rgb(0, 0, 0);
   text-decoration: none;
   color: rgb(255, 255, 255);
-  height: 3rem;
-  width: 200px;
-  border: none;
-  border-radius: 25px;
-  text-align: center;
-  line-height: 3rem; /* Match the height of the button to center vertically */
-  vertical-align: middle; /* Ensure vertical alignment if used with inline elements */
-  transition: 0.3s;
+border: 1px solid black;  
+padding: 12px 20px;
+border-radius:2px ;  
+text-align: center;
+ /* line-height: 3rem;  Match the height of the button to center vertically */
+  /*vertical-align: middle;  Ensure vertical alignment if used with inline elements */
+  transition: all 0.25s ease-in;
 }
 
 .enter .enterbtn:hover {
-  background-color: rgb(19, 17, 17);
-  color: rgb(255, 255, 255);
+  background-color: white;
+  color: black;
   /* transition:0.3s */
 }
 
