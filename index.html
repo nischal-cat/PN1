@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSIT PROJECT</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css" integrity="sha512-DJLNx+VLY4aEiEQFjiawXaiceujj5GA7lIY8CHCIGQCBPfsEG0nGz1edb4Jvw1LR7q031zS5PpPqFuPA8ihlRA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
   </head>
   <body>
     <div class="container">
       <header class="header">
         <div class="logo"><h1>LOGO</h1></div>
-        <nav class="nav">
+        <nav class="nav nav__hamburger">
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="#">Learn</a></li>
@@ -21,16 +22,27 @@
           </ul>
         </nav>
         <div class="themebtn">
-          <button onclick="fun()"><img src="theme.png" alt="theme" /></button>
+          <button onclick="fun()"><img src="theme.png" alt="theme" style="font-style: italic;"/></button>
+        </div>
+        <div class="hamburger" style="cursor: pointer;">
+          <i class="fas fa-bars toggle__icon" ></i>
         </div>
       </header>
 
       <!-- main -->
 
+     
       <main class="main">
-        <section class="section navigation">
+        <section class="section navigation nav-sticky ">
           <nav class="nav">
-            <h1>Intro to Computer Science</h1>
+            <div style="display: flex;gap: 15px;" class="navigation__flex__row">
+            <h1 style="align-self:flex-end;">Intro to Computer Science</h1>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="cursor: pointer;" class="svg__icon">
+              <line x1="0" y1="23" x2="23" y2="1" stroke="red" stroke-width="6"/>
+              <line x1="1" y1="1" x2="23" y2="23" stroke="red" stroke-width="6"/>
+          </svg>
+            </div>
+            <div class="wrapper">
             <details class="nav-details" data-topic="introduction">
               <summary>Introduction</summary>
               <dd>
@@ -71,14 +83,22 @@
                 <li><a href="#" data-topic="topic15">Topic 15</a></li>
               </dd>
             </details>
+          </div>
           </nav>
         </section>
         <!-- playground section  -->
-        <section class="section playground" padding="20px">
+        <div class="playground__container"> 
+        <section class="section playground" >
+         <div class="hero__text">
           <div class="title">
               <h1>Khelne haina ta quiz ? </h1>
               <div class="para">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis beatae totam ab deserunt. Nihil soluta vitae voluptas ipsam tenetur repellat!</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis beatae totam ab deserunt. Nihil soluta vitae voluptas ipsam tenetur repellat!
+                    Laboriosam expedita consectetur quod perferendis debitis aliquid possimus nobis vero voluptatum corrupti natus sed autem ipsam nostrum, ipsum fuga eius ipsa doloremque.
+                  </p>
+                  <p><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. In explicabo aut minus quas voluptatibus eligendi totam atque sed neque reiciendis, ex, pariatur incidunt, officia maiores cupiditate! Quidem vel id iusto!
+
+                  </p>
               </div>
           </div>
           <div class="enter">
@@ -87,11 +107,11 @@
           <div class="quiz-section" id="quiz-section" style="display: none;">
             <!-- Quiz content will be dynamically inserted here by js -->
           </div>
+        </div>
           
       </section>
+    </div>
       </main>
-
-
       <!-- content -->
       <section class="review-section">
         <div class="review-section-info">

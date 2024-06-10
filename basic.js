@@ -293,6 +293,65 @@ document.addEventListener('DOMContentLoaded', function() {
     renderContent('semester1'); // Default topic
 });
 
+// <--- for hamburger icon --->
+const crossIcon = document.querySelector("toggle__icon")
+const nav__menu = document.querySelector(".nav__hamburger");
+const hamburger__menu = document.querySelector(".hamburger");
+hamburger__menu.addEventListener("click",()=>{
+    nav__menu.classList.toggle("nav__small__screen");
+    if (nav__menu.classList.contains("nav__small__screen")) {
+        hamburger__menu.innerHTML = '<i class="fas fa-times" style="color: crimson;"></i>';
+
+    } else {
+        hamburger__menu.innerHTML = '<i class="fas fa-bars"></i>';
+    }
+
+})
+//<---for side-Bar menu --->
+const side__bar__btn = document.querySelector(".svg__icon");
+const side__bar = document.querySelector(".navigation");
+const playground__section =  document.querySelector(".playground");
+const reviewSection = document.querySelector(".review-section");
+const courses = document.querySelector(".courses");
+const contribution = document.querySelector(".contribution");
+
+
+side__bar__btn.addEventListener("click",()=>{
+
+    side__bar.classList.add("sideBar__css");
+
+    //this is for opacity of the background when sidebar is open
+    // playground__section.style.opacity = "1";
+    // reviewSection.style.opacity = "1";
+    // courses.style.opacity = "1";
+    // contribution.style.opacity = "1";
+
+
+    if(side__bar.classList.contains("sideBar__css")){
+        const span = document.createElement('span');
+        span.innerHTML =`<i class="fa-sharp fa-solid fa-arrow-left"></i>`;
+        span.className = 'fixed-span';
+        
+        span.addEventListener('click', () => {
+           side__bar.classList.remove("sideBar__css");
+
+               //this is for opacity of the background when sidebar is open
+        //    playground__section.style.opacity = "0.6";
+        //    reviewSection.style.opacity = "0.6";
+        //    courses.style.opacity = "0.6";
+        //    contribution.style.opacity = "0.6";
+
+           if(!side__bar.classList.contains("sideBar__css")){
+            span.style.display = "none";
+
+           }
+        });
+        document.body.appendChild(span);
+    }
+
+})
+
+
 
    
   
