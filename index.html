@@ -1,243 +1,739 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About-guruDev</title>
     <script src="https://kit.fontawesome.com/a0f96472cb.js" crossorigin="anonymous"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSIT PROJECT</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css" integrity="sha512-DJLNx+VLY4aEiEQFjiawXaiceujj5GA7lIY8CHCIGQCBPfsEG0nGz1edb4Jvw1LR7q031zS5PpPqFuPA8ihlRA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
-  </head>
-  <body>
-    <div class="container">
-      <header class="header">
-        <div class="logo"><h1>LOGO</h1></div>
-        <nav class="nav nav__hamburger">
-          <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="#">LEARN</a></li>
-            <li><a href="#">EDITOR</a></li>
-            <li><a href="blog.html">BLOG</a></li>
-            <li><a href="#">ABOUT</a></li>
-          </ul>
-        </nav>
-        <div class="themebtn">
-          <button onclick="fun()"><img src="theme.png" alt="theme" style="font-style: italic;"/></button>
-        </div>
-        <div class="hamburger" style="cursor: pointer;">
-          <i class="fas fa-bars toggle__icon" ></i>
-        </div>
-      </header>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:sans-serif;
+}
+body {
+  overflow-x: hidden;
+  background: #fff;
+  color: #1a1a1a;
+}
 
-      <!-- main -->
 
-     
-      <main class="main">
-        <section class="section navigation nav-sticky ">
-          <nav class="nav">
-            <div style="display: flex;gap: 15px;" class="navigation__flex__row">
-            <h1 style="align-self:flex-end;">Intro to Computer Science</h1>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="cursor: pointer;" class="svg__icon">
-              <line x1="0" y1="23" x2="23" y2="1" stroke="white" stroke-width="6"/>
-              <line x1="1" y1="1" x2="23" y2="23" stroke="white" stroke-width="6"/>
-          </svg>
-            </div>
-            <div class="wrapper">
-            <details class="nav-details" data-topic="introduction">
-              <summary>Introduction</summary>
-              <dd>
-                <li><a href="#" data-topic="Linux">Linux</a></li>
-                <li><a href="#" data-topic="DevOps">DevOps</a></li>
-                <li><a href="#" data-topic="Networking">Networking</a></li>
-              </dd>
-            </details>
-            <details class="nav-details" data-topic="in-depth">
-              <summary>In Depth</summary>
-              <dd>
-                <li><a href="#" data-topic="topic4">Topic 4</a></li>
-                <li><a href="#" data-topic="topic5">Topic 5</a></li>
-                <li><a href="#" data-topic="topic6">Topic 6</a></li>
-              </dd>
-            </details>
-            <details class="nav-details" data-topic="summary">
-              <summary>Summary</summary>
-              <dd>
-                <li><a href="#" data-topic="topic7">Topic 7</a></li>
-                <li><a href="#" data-topic="topic8">Topic 8</a></li>
-                <li><a href="#" data-topic="topic9">Topic 9</a></li>
-              </dd>
-            </details>
-            <details class="nav-details" data-topic="play">
-              <summary>Play</summary>
-              <dd>
-                <li><a href="#" data-topic="topic10">Topic 10</a></li>
-                <li><a href="#" data-topic="topic11">Topic 11</a></li>
-                <li><a href="#" data-topic="topic12">Topic 12</a></li>
-              </dd>
-            </details>
-            <details class="nav-details" data-topic="blog">
-              <summary>Blog</summary>
-              <dd>
-                <li><a href="#" data-topic="topic13">Topic 13</a></li>
-                <li><a href="#" data-topic="topic14">Topic 14</a></li>
-                <li><a href="#" data-topic="topic15">Topic 15</a></li>
-              </dd>
-            </details>
-          </div>
-          </nav>
-        </section>
-        <!-- playground section  -->
-        <div class="playground__container"> 
-        <section class="section playground" >
-         <div class="hero__text">
-          <div class="title">
-              <h1>Khelne haina ta quiz ? </h1>
-              <div class="para">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis beatae totam ab deserunt. Nihil soluta vitae voluptas ipsam tenetur repellat!
-                    Laboriosam expedita consectetur quod perferendis debitis aliquid possimus nobis vero voluptatum corrupti natus sed autem ipsam nostrum, ipsum fuga eius ipsa doloremque.
-                  </p>
-                  <p><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. In explicabo aut minus quas voluptatibus eligendi totam atque sed neque reiciendis, ex, pariatur incidunt, officia maiores cupiditate! Quidem vel id iusto!
+.header {
+  height: 10vh;
+  width: 100%;
+  background-color: #1a1a1a;
+  color: white;
+  padding: 20px 70px;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0px;
+  font-family: sans-serif;
+  z-index: 99;
+}
 
-                  </p>
-              </div>
-          </div>
-          <div class="enter">
-              <a class="enterbtn" href="#">Enter the playground</a>
-          </div>
-          <div class="quiz-section" id="quiz-section" style="display: none;">
-            <!-- Quiz content will be dynamically inserted here by js -->
-          </div>
-        </div>
-          
-      </section>
+.header ul {
+  display: flex;
+  gap: 0px 70px;
+
+}
+
+.header ul li {
+  list-style: none;
+}
+
+.header a {
+  text-decoration: none;
+  color: white;
+}
+
+
+/* about section designs  */
+#about {
+    padding: 20px;
+    text-align: center;
+
+}
+
+.about-header {
+    margin-bottom: 20px;
+    position: relative;
+  font-weight: 700;
+  margin-bottom: 45px;
+}
+
+.about-header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.us_ko_color{
+    color: #00bbf0;
+}
+
+.about-header .subtitle {
+    font-size: 1.2em;
+    color: #666;
+
+}
+.subtitle{
+    max-width: 70vw;
+    margin: 0 auto;
+}
+
+.about-containers {
+    display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 30px 10px;
+  margin-right: 10vw;
+  margin-left: 10vw;
+}
+
+
+.about-container {
+    flex: 1;
+    padding: 30px 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.about-container.left {
+    text-align: center; /* Changed to align right for visual consistency */
+    align-content: center;
+    font-size: 1.3rem;
+    gap: 2px;
+}
+
+.about-container.right {
+    text-align: center; /* Changed to align left for visual consistency */
+}
+.about-container h2{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.about-container img {
+    max-width: 100%;
+    height: 400px;
+}
+
+/* aboutcontact form from here  */
+.aboutcontactform-container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 5vh;
+    background-color: #fff;
+    /* border-radius: 10px; */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.aboutcontactform-header {
+    text-align: center;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.aboutcontactform-title {
+    margin-bottom: 15px;
+}
+
+.aboutcontactform-form {
+    width: 100%;
+}
+
+.aboutcontactform-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.aboutcontactform-column {
+    flex: 1;
+    padding: 10px;
+    min-width: 250px;
+}
+
+.aboutcontactform-group {
+    margin-bottom: 15px;
+}
+
+.aboutcontactform-input-icon-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.aboutcontactform-input-icon-container i {
+    position: absolute;
+    left: 10px;
+    color: #aaa;
+}
+
+.aboutcontactform-input {
+    width: 100%;
+    padding: 10px 10px 10px 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.aboutcontactform-textarea {
+    width: 100%;
+    padding: 10px 10px 10px 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+.aboutcontactform-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aboutcontactform-checkbox label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.aboutcontactform-checkbox input {
+    margin-right: 10px;
+}
+
+.aboutcontactform-button {
+    padding: 10px 20px;
+    background-color: #1a1a1a;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.aboutcontactform-button:hover {
+    background-color: #969a9b;
+    color: #1a1a1a;
+}
+
+
+/* about footer section from here  */
+.about-footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    margin-top: 20px;
+    width: 85vw;
+    margin: 0 auto;
+    border-top: 2px solid #666;
+}
+
+.about-footer-section {
+    flex: 1;
+    
+    padding: 30px;
+    box-sizing: border-box;
+    /* border-right: 3px solid #1a1a1a; */
+     /* Adds the right border to sections */
+}
+
+.about-footer-section .newsletter-container{
+    border-right:none; /* Removes  the right border from last section */
+}
+
+
+
+/* address section ko css  */
+
+.address .contact-link-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+}
+.address .contact-link-box a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #969a9b;
+    margin-bottom: 10px;
+    transition: color 0.2s ease;
+}
+
+.address .contact-link-box a:hover {
+    color: #1a1a1a; /* Change to your preferred hover color */
+}
+
+.address .contact-link-box i {
+    margin-right: 10px;
+    font-size: 1.2em;
+    color: inherit; /* Inherit color to ensure it changes on hover */
+    transition: color 0.3s ease;
+}
+
+
+.info-social {
+    display: flex;
+    font-size: 1.3rem;
+    gap: 10px;
+    justify-content: flex-start;
+    
+}
+
+.info-social a {
+    color: #969a9b;
+    margin-right: 10px;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.info-social i:hover {
+    color:#1a1a1a;
+}
+
+/* importaint links ko css yaha bata xa hai  */
+
+.about-footer-section h3 {
+    margin-bottom: 3rem;
+}
+
+.about-footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: start;
+}
+
+.about-footer-section ul li {
+    padding: 10px;
+    margin: 0 auto;
+    font-size: 16px;
+    width: 50%; /* Adjust width to fit 2 columns */
+   
+}
+
+.about-footer-section ul li a {
+    text-decoration: none;
+    color: #969a9b;
+    
+}
+.about-footer-section ul li a:hover {
+    text-decoration: none;
+    color: #1a1a1a;
+    
+}
+
+.implinks {
+  color: #969a9b;
+  line-height: 2;
+  position: relative;
+  text-align: start;
+}
+
+.implinks::before {
+  content: '';
+  width: 0;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #1a1a1a;
+  position: absolute;
+  bottom: -.25rem;
+  left: 50%;
+  color: #1a1a1a;
+  transition: width .4s, left .4s;
+}
+
+.implinks:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+/* newsletter section ko css  */
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: transparent;
+    /* border: #00bbf0 2px solid; */
+    border-radius:  8px;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    color: #1a1a1a;
+}
+
+.newsletter-container h3 {
+    font-size: 1.75em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter-form input {
+    background-color: white;
+    color: #969a9b;
+    border: #969a9b 1px solid;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.newsletter-form input:focus {
+    background-color: #e6e6e6;
+    outline: none;
+    color: #969a9b;
+    border: 1px solid #1a1a1a;
+    transition: background-color 0.15s ease-in-out, border 0.15s ease-in-out;
+}
+
+.newsletter-form button {
+    background-image: linear-gradient(to right, #1a1a1a, #3182ce);
+    color: rgb(232, 232, 232);
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-image 0.15s ease-in-out;
+}
+
+.newsletter-form button:hover {
+    background: #1a1a1a;
+}
+
+.privacy-policy {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.privacy-policy a {
+    color: #969a9b;
+    font-size: 0.875em;
+    text-decoration: none;
+}
+
+.privacy-policy a:hover {
+    text-decoration: underline;
+}
+
+/* newsletter subscribe garepachhi aaune popup ko css  */
+
+#subscribed-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 400px; /* Set a max-width for better responsiveness */
+  height: 30vh;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  z-index: 1000;
+  overflow:wrap;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.subscribed-popup-title {
+  font-weight: 600;
+ font-size: 1.5rem;
+  color: rgb(31, 41, 55);
+  gap: 1.2rem;
+}
+
+.subscribed-popup-description {
+  font-size: 1.2rem;
+  line-height: 1.25rem;
+  color: rgb(75, 85, 99);
+  margin-top: 1rem; /*Add spacing below description*/
+}
+
+.subscribed-popup-description a {
+  color: #969a9b;
+  text-decoration: none;
+}
+
+.subscribed-popup-description a:hover {
+  text-decoration: underline;
+}
+
+.subscribed-popup-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.subscribed-popup-accept {
+  font-size: 1.2rem;
+  background-color: rgb(17, 24, 39);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.subscribed-popup-accept:hover {
+  background-color: rgb(55, 65, 81);
+}
+
+.subscribed-popup-accept:focus {
+  outline: none;
+}
+ 
+/* scrollable place of about  */
+
+
+/* .slide {
+  background-color:rgb(230, 230, 230);
+  border-bottom:#4086c2 solid 1px;
+  border-radius: 13px;
+  margin-bottom: 5px;
+  color: #00bbf0;
+}
+
+
+.scroll-snap-card {
+  height: 70vh;
+  width: 100%;
+  scroll-snap-type: y 0.3s;
+  overflow: auto;
+  margin-top: 5rem;
+  border-radius: 10px;
+}
+
+.scroll-snap-card .slide {
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll-snap-card .slide p {
+  font-size: 1em;
+  color:#007BFF;
+  font-weight: 500;
+}
+ */
+
+
+    </style>
+</head>
+
+<header class="header">
+    <div class="logo"><h1>LOGO</h1></div>
+    <nav class="nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Learn</a></li>
+        <li><a href="#">Editor</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+    <div class="themebtn">
+      <button onclick="fun()"><img src="theme.png" alt="theme" /></button>
     </div>
-      </main>
-      <!-- content -->
-      <section class="review-section">
-        <div class="review-section-info">
-          <h1>Explore the interesting way of learning tech</h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, amet, error ea in pariatur nulla adipisci neque, atque aliquam eligendi architecto saepe minima labore! Porro nobis necessitatibus itaque ex magni voluptate maxime culpa consequatur.</p>
-        </div>
-      </section>
+  </header>
 
-      <!-- courses haru yaa dekhi -->
-      <div class="courses">
-        <h1 class="text-center mb-5">Browse Topics</h1>
-        <ul class="courseko-nav" id="topicsNav">
-            <li class="courseko-nav-item">
-                <a class="courseko-nav-link active" href="#" data-topic="semester1">Semester I</a>
-            </li>
-            <li class="courseko-nav-item">
-                <a class="courseko-nav-link" href="#" data-topic="semester2">Semester II</a>
-            </li>
-            <li class="courseko-nav-item">
-                <a class="courseko-nav-link" href="#" data-topic="semester3">Semester III</a>
-            </li>
-        </ul>
-        <div class="row" id="topicsContent">
-            <!-- Semester I content by default -->
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <div class="img-container">
-                        <img src="/images/courses/maths1.jpg" alt="Mathematics" class="img-fluid">
+
+<body>
+    <section id="about">
+        <div class="about-header">
+            <h1>About <span class="us_ko_color">Us</span></h1>
+            <p class="subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam enim rem natus illum sit debitis consequatur quaerat vero repellat itaque explicabo quisquam expedita praesentium, eos nemo beatae magni, nobis nulla?</p>
+        </div>
+        <div class="about-containers">
+            <div class="about-container right">
+                <img src="/aboutus.jpg.png" alt="Image Placeholder">
+            </div>
+            <div class="about-container left">
+
+                <h2>Our Story</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum illum rem necessitatibus earum dolor placeat sequi quam cupiditate cumque, in laborum ut ad. Qui consequuntur labore, suscipit quae, similique nostrum explicabo aliquid iste eligendi officia veritatis repudiandae velit a ex provident fugiat distinctio nihil quod ipsum consequatur nesciunt error libero perferendis ratione. Optio voluptatem consectetur officia nam beatae expedita veniam perferendis consequatur sit harum cupiditate quos aliquam, amet praesentium nobis eveniet adipisci. At pariatur quo error. Fugiat quae repellendus et doloremque voluptatum architecto dolorum animi facilis reprehenderit nesciunt! Quis soluta culpa perferendis dolor itaque enim iure fugiat eos quae tempora?</p>
+            </div>
+            
+        </div>
+        <!-- scrollable section  -->
+        <!-- <div id="about" class="scroll-snap-card ">
+            <div class="slide ">
+                <p class="tip"><div class="about-container left">
+                    <h2>Our Story</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum illum rem necessitatibus earum dolor placeat sequi quam cupiditate cumque, in laborum ut ad. Qui consequuntur labore, suscipit quae, similique nostrum explicabo aliquid iste eligendi officia veritatis repudiandae velit a ex provident fugiat distinctio nihil quod ipsum consequatur nesciunt error libero perferendis ratione. Optio voluptatem consectetur officia nam beatae expedita veniam perferendis consequatur sit harum cupiditate quos aliquam, amet praesentium nobis eveniet adipisci. At pariatur quo error. Fugiat quae repellendus et doloremque voluptatum architecto dolorum animi facilis reprehenderit nesciunt! Quis soluta culpa perferendis dolor itaque enim iure fugiat eos quae tempora?</p>
+                </div></p>
+            </div>
+            <div class="slide">
+                <p class="tip">storyyyyyyyyyy</p>
+            </div>
+            <div class="slide">
+                <p class="tip">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque sunt suscipit quis, corrupti esse aspernatur deleniti dolorem ipsa consequuntur, vel dolorum illo asperiores reiciendis ut recusandae quam repellat sed debitis provident est similique, doloremque tempora? Alias amet et soluta expedita, voluptas laudantium dicta nulla iure quibusdam quaerat dignissimos doloremque nostrum officiis at aliquid odit quos accusantium magni. Reiciendis hic nemo rerum soluta perferendis voluptatum labore amet eligendi eum fugiat laudantium voluptate ipsam id odio, recusandae, eveniet eaque et iure saepe necessitatibus corrupti! Minus amet rerum voluptas eum aspernatur, iste, consectetur, neque consequuntur at illo suscipit? Amet harum natus, repudiandae praesentium, velit quidem explicabo consequuntur vel ratione assumenda dolorum eum sapiente ex voluptas similique distinctio neque illum beatae doloribus non atque esse iure at! Tempora velit consequatur necessitatibus nostrum. Quae corporis quis soluta veritatis fugit! Alias ipsam nam repellat reprehenderit doloribus, iure officia ab, maxime quisquam adipisci velit itaque laboriosam officiis hic. Perferendis repellendus harum magni tempore maxime aspernatur repellat doloribus animi vitae enim, ipsam odit quidem, placeat, recusandae officiis. Aspernatur aliquid maxime obcaecati eaque excepturi sint dolorem dolor debitis ex perspiciatis, molestias repellat, magnam molestiae possimus assumenda nostrum officiis omnis numquam exercitationem ut fuga quam corrupti! Voluptas, quo. Aliquam delectus nostrum blanditiis reprehenderit dolores nam cum quia repudiandae voluptatibus nihil deleniti, eveniet odio consequatur beatae cumque harum fugiat quis officiis, illum sed necessitatibus vero nulla sunt. Numquam odio modi nostrum quod aperiam ullam sapiente error quia porro tempore placeat assumenda nisi totam debitis velit officia qui veniam, laboriosam nam cumque! Veritatis ex facilis, doloribus asperiores illum eaque voluptate maiores aliquid officia vitae corporis cupiditate deserunt ipsam, ullam tenetur temporibus molestias, beatae ea aperiam ut magnam saepe nesciunt corrupti aliquam. Doloribus earum voluptate dolor velit sunt ab hic animi placeat sed libero nam soluta enim quas, voluptates repudiandae aliquam perspiciatis quidem a blanditiis tempora fugit saepe odio! Est, nesciunt reprehenderit nobis velit a nostrum laboriosam accusantium error fugit voluptate sit quod fugiat eum minima magnam. Consequatur, quidem incidunt quibusdam deleniti, magnam officia ab error eos molestiae placeat quasi exercitationem, sit libero. Maiores quidem ullam repudiandae odit ea eaque, ab assumenda dolore, labore vero amet, ipsum iusto laboriosam rem quisquam dolorem in cumque. Ipsum, pariatur quasi? Sed voluptatibus ab sit aut enim ipsa! Quisquam architecto asperiores qui necessitatibus dicta aliquam officia nobis minima quod dolorum, perferendis ipsum totam sit molestias itaque. Sunt eius libero minus eaque asperiores reiciendis repudiandae numquam doloremque, ipsa doloribus, error, et sequi architecto sapiente molestiae. Voluptate ea in est error nam laborum. Alias ex nostrum eligendi maxime, ipsam enim delectus laborum iure porro architecto beatae eveniet aliquid illo facilis animi voluptatem modi rem autem commodi vel est? Nesciunt reiciendis perspiciatis animi aut neque modi dicta quibusdam quod molestiae aliquid, aperiam hic magnam! Ullam non nemo quibusdam corrupti sunt aut placeat minima saepe, labore alias, culpa quia blanditiis expedita tenetur porro tempore sit reiciendis! Eos sapiente, voluptatibus cupiditate quia architecto placeat magnam rerum, pariatur expedita qui tempore saepe delectus error. Optio nisi maiores pariatur, corrupti eaque quas? Officiis, molestiae.</p>
+            </div>
+        </div> -->
+
+        <!-- contact form ko section  -->
+
+        <div class="aboutcontactform-container">
+            <div class="aboutcontactform-header">
+                <h1 class="aboutcontactform-title">Contact us</h1>
+            </div>
+            <form class="aboutcontactform-form" action="#" method="post">
+                <div class="aboutcontactform-row">
+                    <div class="aboutcontactform-column">
+                        <div class="aboutcontactform-group">
+                            <div class="aboutcontactform-input-icon-container">
+                                <i class="fa fa-user"></i>
+                                <input type="text" class="aboutcontactform-input" id="name" placeholder="Name">
+                            </div>
+                        </div>
+                        <div class="aboutcontactform-group">
+                            <div class="aboutcontactform-input-icon-container">
+                                <i class="fa fa-envelope"></i>
+                                <input type="email" class="aboutcontactform-input" id="email" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="aboutcontactform-group">
+                            <div class="aboutcontactform-input-icon-container">
+                                <i class="fa fa-phone"></i>
+                                <input type="text" class="aboutcontactform-input" id="phone" placeholder="Phone">
+                            </div>
+                        </div>
+                        <div class="aboutcontactform-group">
+                            <div class="aboutcontactform-input-icon-container">
+                                <i class="fa fa-info-circle"></i>
+                                <input type="text" class="aboutcontactform-input" id="subject" placeholder="Subject">
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Mathematics <span class="badge float-end">14</span></h5>
-                        <p class="card-text">Introduction to Calculus</p>
+                    <div class="aboutcontactform-column">
+                        <div class="aboutcontactform-group">
+                            <div class="aboutcontactform-input-icon-container">
+                                <i class="fa fa-pencil-square-o"></i>
+                                <textarea rows="10" cols="50" class="aboutcontactform-input" id="message" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="aboutcontactform-group aboutcontactform-actions">
+                    <div class="aboutcontactform-checkbox">
+                        <label>
+                            <input type="checkbox"> Send a copy to my email.
+                        </label>
+                    </div>
+                    <input type="submit" value="SEND MESSAGE" class="aboutcontactform-button">
+                </div>
+            </form>
+        </div>
+
+
+        <!-- footer ko section  -->
+        <div class="about-footer">
+            <!-- address ko section  -->
+            <div class="about-footer-section address">
+                <h3>Address</h3>
+                <div class="contact-link-box">
+                    <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> <span>Itahari</span></a>
+                    <a href="callto:+977-98123456666"><i class="fa fa-phone" aria-hidden="true"></i> <span>Call 9819976775</span></a>
+                    <a href="mailto:info@csitinitiatives.com"><i class="fa fa-envelope" aria-hidden="true"></i>info@csitinitiatives.com</a>
+                </div>
+                <div class="info-social">
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <!-- importaint links section -->
+            <div class="about-footer-section">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="#" class="implinks">Subjects</a></li>
+                    <li><a href="#" class="implinks">Join us!</a></li>
+                    <li><a href="#" class="implinks">hyaa</a></li>
+                    <li><a href="#" class="implinks">arko link garnu</a></li>
+                    <li><a href="#" class="implinks">next link item</a></li>
+                    <li><a href="#" class="implinks">last item</a></li>
+                </ul>
+            </div>
+
+            <!-- newsletter ko section  -->
+            <div class="about-footer-section">
+                <div class="newsletter">
+                    <div class="newsletter-container">
+                        <h3>Subscribe to Our Newsletter</h3>
+                        <form id="subscribe-form" class="newsletter-form">
+                            <input id="subscribe-email" placeholder="Enter your email address" type="email">
+                            <button type="submit">Subscribe</button>
+                        </form>
+                        <div class="privacy-policy">
+                            <a href="#">Privacy Policy</a>
+                        </div>
                     </div>
                 </div>
             </div>
-          </div>
-      </div>
-    
-    
-
-    <!-- contribution section ho yaa dekhi  -->
-      <section class="contribution">
-        <div class="contribution-info">
-          <h1>Contributors</h1>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, blanditiis.</p>
-        </div>
-        <div class="contribution-gallary">
-          <div class="gallary-shape">
-            <img src="/PN1/images/elon.jpg" alt="Contributor">
-            <div class="info">
-              <p class="name">Nischal Pokhrel</p>
-              <p class="job">Software Engineer</p>
+            <!-- subscribe garepaxi aaune popup  -->
+            <div id="subscribed-popup" class="subscribed-popup-card" style="display: none;">
+                <span class="subscribed-popup-title">🎉 Thank You for Subscribing!</span>
+                <p class="subscribed-popup-description">You have successfully subscribed to our newsletter. <a href="#">Read privacy policies</a>. </p>
+                <div class="subscribed-popup-button">
+                    <button id="subscribed-popup-ok" class="subscribed-popup-accept">
+                        Okay
+                    </button>
+                </div>
             </div>
-          </div>
-          <div class="gallary-shape">
-            <img src="/PN1/images/nischal1.jpg" alt="Contributor">
-            <div class="info"><p class="name">Nischal Basnet</p>
-            <p class="job">Notes Collector</p>
-          </div>
-          </div>
-          <div class="gallary-shape">
-            <img src="/PN1/images/Kumar_Nagarkoti_(cropped).jpg" alt="Contributor">
-            <div class="info">
-              <p class="name">John Doe</p>
-              <p class="job">DevOps Engineer</p>
-            </div>
-            
-          </div>
-          <!-- Add more gallary-shape divs as needed -->
-        </div>
-      </section>
-      <!-- footer-section -->
-      <footer class="footer">
-        <div class="about">
-          <h1>About Us</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consectetur unde repudiandae. Libero fugiat molestias fuga quae
-            provident enim nihil reiciendis illo, ipsum repellendus. Quibusdam
-            voluptas, quaerat exercitationem repudiandae quia quis temporibus
-            assumenda aliquam.
-          </p>
-          <div class="useful-links">
-            <h1>Useful Links</h1>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Learn</a></li>
-              <li><a href="#">Editor</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="contact">
-    <h1>Contact Us</h1>
-    <button class="btncnt" id="contactButton">Contact Us</button>
-    <button class="btncnt" id="joinButton">Join Us</button>
-    <div id="contactForm" style="display: none;">
-     
-      <form>
-        <!-- contact form fields -->
-        <form action="#" method="post">
-          <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-          </div>
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-          <div class="form-group">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-          </div>
-          <button type="submit">Submit</button>
-        </form>
-      </form>
-    </div>
-    <div id="joinForm" style="display: none;">
-      <!-- Your embedded Google form goes here -->
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfm0DjBSpijs-KM4kWph87ZgWYwSMM8X09h_MNMd6C6EurPpg/viewform?embedded=true" class="gform" width="640" height="460" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>    </div>
-  </div>
-       
-      </footer>
-      
-    </div>
 
-    <script src="basic.js"></script>
-  </body>
+        </div>
+    </section>
+    
+    <!-- javascript codes -->
+    <script>
+        // subscribe garda dekhaune message/popup ko js code 
+
+document.getElementById('subscribe-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    // Show the subscription confirmation message
+    document.getElementById('subscribed-popup').style.display = 'block';
+    
+    // Hide the subscription form
+    document.getElementById('newsletter-form').style.display = 'none';
+});
+
+document.getElementById('subscribed-popup-ok').addEventListener('click', function() {
+    // Hide the subscription confirmation message
+    document.getElementById('subscribed-popup').style.display = 'none';
+    
+    // Optionally, show the form again if needed
+    document.getElementById('newsletter-form').style.display = 'block';
+});
+
+// contact form ko 
+
+
+    </script>
+</body>
 </html>
