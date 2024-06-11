@@ -300,7 +300,7 @@ const hamburger__menu = document.querySelector(".hamburger");
 hamburger__menu.addEventListener("click",()=>{
     nav__menu.classList.toggle("nav__small__screen");
     if (nav__menu.classList.contains("nav__small__screen")) {
-        hamburger__menu.innerHTML = '<i class="fas fa-times" style="color: crimson;"></i>';
+        hamburger__menu.innerHTML = '<i class="fas fa-times"></i>';
 
     } else {
         hamburger__menu.innerHTML = '<i class="fas fa-bars"></i>';
@@ -351,7 +351,18 @@ side__bar__btn.addEventListener("click",()=>{
 
 })
 
+// dark-light mode
+const toggleBtn = document.querySelector(".theme__icon");
+toggleBtn.onclick = toggleTheme;
 
+function toggleTheme() {
+    document.body.classList.toggle("darkTheme");
+    if(document.body.classList.contains("darkTheme")){
+       toggleBtn.src = "images/sun.png";
+    }
+    else   toggleBtn.src = "images/moon.png";
+
+}
 
    
   
